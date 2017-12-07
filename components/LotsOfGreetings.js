@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, View } from 'react-native';
+import { AppRegistry, Text, View, ScrollView } from 'react-native';
 
 class Greeting extends Component {
   render() {
@@ -12,11 +12,11 @@ class Greeting extends Component {
 export default class LotsOfGreetings extends Component {
   render() {
     return (
-      <View style={{alignItems: 'center'}}>
+      <ScrollView>
         <Greeting name='Russell' />
         <Greeting name='Andrea' />
         <Greeting name='Porter' />
-      </View>
+      </ScrollView>
     );
   }
 }

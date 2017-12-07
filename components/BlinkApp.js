@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, View } from 'react-native';
+import { AppRegistry, Text, View, ScrollView } from 'react-native';
 
 class Blink extends Component {
   constructor(props) {
@@ -25,12 +25,12 @@ class Blink extends Component {
 export default class BlinkApp extends Component {
   render() {
     return (
-      <View>
+      <ScrollView>
         <Blink text='I love to blink' />
         <Blink text='Yes blinking is so great' />
         <Blink text='Why did they ever take this out of HTML' />
         <Blink text='Look at me look at me look at me' />
-      </View>
+      </ScrollView>
     );
   }
 }
