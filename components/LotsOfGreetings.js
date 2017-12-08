@@ -13,9 +13,7 @@ export default class LotsOfGreetings extends Component {
   render() {
     return (
       <ScrollView>
-        <Greeting name='Russell' />
         <Greeting name='Andrea' />
-        <Greeting name='Porter' />
       </ScrollView>
     );
   }
