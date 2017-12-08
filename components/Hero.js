@@ -8,29 +8,21 @@ export default class Hero extends Component {
     };
     return (
       <ScrollView>
-        <Text style={styles.bigblue} >HIKE</Text>
-        <Image source={pic} style={{width: 390, height: 310}}/>
-        {/* <View>
-          <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-          <View style={{width: 100, height: 100, backgroundColor: 'skyblue'}} />
-          <View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} />
-        </View> */}
+        <Text style={styles.heroText} >HIKE</Text>
+        <Image source={pic} style={{flex: 1, height: 310}}/>
         <View>
-          <View style={{flex: 1, height: 50, backgroundColor: 'powderblue'}} />
-          <View style={{flex: 2, height: 100, backgroundColor: 'skyblue'}} />
-          <View style={{flex: 3, height: 150, backgroundColor: 'steelblue'}} />
+          <View style={{flex: 2, height: 50, backgroundColor: 'powderblue'}} />
+          <View style={{flex: 3, height: 50, backgroundColor: 'skyblue'}} />
+          <View style={{flex: 4, height: 50, backgroundColor: 'steelblue'}} />
         </View>
       </ScrollView>
     );
   }
 }
 const styles = StyleSheet.create({
-  bigblue: {
-    color: 'blue',
+  heroText: {
+    color: 'green',
     fontWeight: 'bold',
-    fontSize: 30,
-  },
-  red: {
-    color: 'red',
+    fontSize: 80,
   },
 });
