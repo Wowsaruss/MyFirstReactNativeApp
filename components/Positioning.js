@@ -6,9 +6,9 @@ export default class Positioning extends Component {
     return (
       <ScrollView>
         <View>
-          <View style={{flex: 2, height: 50, backgroundColor: 'powderblue'}} />
-          <View style={{flex: 3, height: 50, backgroundColor: 'skyblue'}} />
-          <View style={{flex: 4, height: 50, backgroundColor: 'steelblue'}} />
+          <View style={{flex: 2, height: 246, backgroundColor: 'powderblue'}} />
+          <View style={{flex: 3, height: 246, backgroundColor: 'skyblue'}} />
+          <View style={{flex: 4, height: 246, backgroundColor: 'steelblue'}} />
         </View>
       </ScrollView>
     );

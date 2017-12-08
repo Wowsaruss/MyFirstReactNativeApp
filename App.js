@@ -6,6 +6,7 @@ import BlinkApp from './components/BlinkApp';
 import Input from './components/Input';
 import Networking from './components/Networking';
 import Positioning from './components/Positioning';
+import StackNavigator from './components/StackNavigator';
 
 export default class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
           <Input/>
           <LotsOfGreetings/>
           <BlinkApp/>
+          <StackNavigator/>
           <Networking/>
         </View>
       </ScrollView>
