@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, View, ScrollView } from 'react-native';
+import { AppRegistry, Text, View, ScrollView, StyleSheet } from 'react-native';
 
 class Blink extends Component {
   constructor(props) {
     super(props);
-    this.state = {showText: true};
+    this.state = {
+      showText: true
+    };
 
-    // Toggle the state every second
     setInterval(() => {
       this.setState(previousState => {
         return { showText: !previousState.showText };
@@ -26,11 +27,17 @@ export default class BlinkApp extends Component {
   render() {
     return (
       <ScrollView>
-        <Blink text='I love to blink' />
-        <Blink text='Yes blinking is so great' />
-        <Blink text='Why did they ever take this out of HTML' />
-        <Blink text='Look at me look at me look at me' />
+        <View>
+          <Text style={styles.blinking}>
+            <Blink text='I love YOU!' />
+          </Text>
+        </View>
       </ScrollView>
     );
   }
 }
+const styles = StyleSheet.create({
+  blinking: {
+    fontSize: 40,
+  }
+})
