@@ -1,21 +1,29 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, ScrollView } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 const HomeScreen = ({ navigation }) => (
-  <View>
-    <Text>Home Screen</Text>
-    <Button
-      onPress={() => navigation.navigate('Details')}
-      title="Go to details"
-    />
-  </View>
+  <ScrollView>
+    <View>
+      <Text>Home Screen</Text>
+      <Button
+        onPress={() => navigation.navigate('Details')}
+        title="Go to details"
+      />
+    </View>
+  </ScrollView>
 );
 
-const DetailsScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Details Screen</Text>
-  </View>
+const DetailsScreen = ({ navigation }) => (
+  <ScrollView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View>
+      <Text>Details Screen</Text>
+      <Button
+        onPress={() => navigation.navigate('Home')}
+        title="Go to home"
+      />
+    </View>
+  </ScrollView>
 );
 
 const RootNavigator = StackNavigator({
